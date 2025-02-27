@@ -25,13 +25,8 @@ from keras.callbacks import LearningRateScheduler
 from keras.callbacks import ModelCheckpoint
 from data import image_size_dict
 import os
-from spatialattention import SpatialAttention
-from crossattention import CrossAttention
-from secondpooling import SecondOrderPooling
 from tensorflow.keras import layers
 from tensorflow.keras import regularizers
-from graph_convolution import GraphConv
-from GSC_utils import generate_Q
 
 
 def get_model(img_rows, img_cols, num_PC, nb_classes, dataID=1, type='AMFRS', lr=0.001):
